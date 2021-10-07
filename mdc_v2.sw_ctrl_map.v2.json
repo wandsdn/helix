@@ -1,0 +1,72 @@
+{
+  "root": {"r1": {}},
+  "ctrl": {
+    "c1": {
+      "sw": ["s1", "s2", "s3"],
+      "host": ["h1", "h2"],
+      "extra_instances": [1],
+      "dom": {
+        "c2": [
+          {"sw": "s2", "port": "4", "sw_to": "s4", "port_to": "3"},
+          {"sw": "s2", "port": "5", "sw_to": "s6", "port_to": "4"}
+        ],
+        "c4": [
+          {"sw": "s2", "port": "6", "sw_to": "s10", "port_to": "3"}
+        ]
+      }
+    },
+    "c2": {
+      "sw": ["s4", "s5", "s6", "s7"],
+      "host": [],
+      "extra_instances": [1, 2],
+      "dom": {
+        "c1": [
+          {"sw": "s4", "port": "3", "sw_to": "s2", "port_to": "4"},
+          {"sw": "s6", "port": "4", "sw_to": "s2", "port_to": "5"}
+        ],
+        "c3": [
+          {"sw": "s5", "port": "4", "sw_to": "s8", "port_to": "3"},
+          {"sw": "s7", "port": "3", "sw_to": "s9", "port_to": "2"}
+        ]
+      }
+    },
+    "c3": {
+      "sw": ["s8", "s9"],
+      "host": ["h8"],
+      "extra_instances": [1],
+      "dom": {
+        "c2": [
+          {"sw": "s8", "port": "3", "sw_to": "s5", "port_to": "4"},
+          {"sw": "s9", "port": "2", "sw_to": "s7", "port_to": "3"}
+        ],
+        "c5": [
+          {"sw": "s9", "port": "3", "sw_to": "s15", "port_to": "3"}
+        ]
+      }
+    },
+    "c4": {
+      "sw": ["s10", "s11", "s12"],
+      "host": [],
+      "dom": {
+        "c1": [
+          {"sw": "s10", "port": "3", "sw_to": "s2", "port_to": "6"}
+        ],
+        "c5": [
+          {"sw": "s12", "port": "3", "sw_to": "s14", "port_to": "3"}
+        ]
+      }
+    },
+    "c5": {
+      "sw": ["s13", "s14", "s15"],
+      "host": [],
+      "dom": {
+        "c4": [
+          {"sw": "s14", "port": "3", "sw_to": "s12", "port_to": "3"}
+        ],
+        "c5": [
+          {"sw": "s15", "port": "3", "sw_to": "s9", "port_to": "3"}
+        ]
+      }
+    }
+  }
+}

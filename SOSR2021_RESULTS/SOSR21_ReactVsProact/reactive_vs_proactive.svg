@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<svg 
+ width="644" height="250"
+ viewBox="0 0 644 250"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 5.2 patchlevel 8 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="644" height="250" fill="#ffffff"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5' stroke='currentColor'/>
+	<path id='gpPt0' stroke-width='0.148' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.148' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.148' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.148' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.148' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.148' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.148' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+	<path id='gpPt13' stroke-width='0.148' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
+	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
+	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='#FFFFFF' flood-opacity='1' result='bgnd'/>
+	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
+	</filter>
+	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
+	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
+	</filter>
+</defs>
+<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,209.5 L70.2,209.5  '/>	<g transform="translate(50.4,215.4)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,170.3 L70.2,170.3  '/>	<g transform="translate(50.4,176.2)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 20</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,131.1 L70.2,131.1  '/>	<g transform="translate(50.4,137.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 40</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,92.0 L70.2,92.0  '/>	<g transform="translate(50.4,97.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 60</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,52.8 L70.2,52.8  '/>	<g transform="translate(50.4,58.7)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 80</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,13.6 L70.2,13.6  '/>	<g transform="translate(50.4,19.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 100</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M104.6,209.5  '/>	<g transform="translate(104.6,228.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >T1-F1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M184.4,209.5  '/>	<g transform="translate(184.4,228.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >T1-F2</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M264.2,209.5  '/>	<g transform="translate(264.2,228.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >T1-F3</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M344.0,209.5  '/>	<g transform="translate(344.0,228.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >T2-F4</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M423.8,209.5  '/>	<g transform="translate(423.8,228.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >T2-F5</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M503.6,209.5  '/>	<g transform="translate(503.6,228.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >T3-F4</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M583.4,209.5  '/>	<g transform="translate(583.4,228.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >T3-F5</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,13.6 L56.7,209.5 L631.3,209.5 L631.3,13.6 L56.7,13.6 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(14.3,111.6) rotate(270)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >Recovery Time (ms)</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M90.4,40.6 L90.4,13.6 L603.4,13.6 L603.4,40.6 L90.4,40.6 Z  '/></g>
+	<g id="gnuplot_plot_1" ><title>React 20ms</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(216.4,33.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" >React 20ms</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<defs>
+		<pattern id='gpPat1' patternUnits='userSpaceOnUse' x='0' y='0' width='8' height='8'>
+		</pattern>
+	</defs>
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat1)' points = '229.0,33.8 248.8,33.8 248.8,20.3 229.0,20.3 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M229.0,33.8 L248.8,33.8 L248.8,20.4 L229.0,20.4 L229.0,33.8 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<defs>
+		<pattern id='gpPat2' patternUnits='userSpaceOnUse' x='0' y='0' width='8' height='8'>
+		</pattern>
+	</defs>
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat2)' points = '80.6,209.5 96.7,209.5 96.7,92.6 80.6,92.6 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M80.6,209.5 L80.6,92.7 L96.6,92.7 L96.6,209.5 L80.6,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat2)' points = '160.4,209.5 176.5,209.5 176.5,91.1 160.4,91.1 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M160.4,209.5 L160.4,91.2 L176.4,91.2 L176.4,209.5 L160.4,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat2)' points = '240.3,209.5 256.3,209.5 256.3,93.4 240.3,93.4 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M240.3,209.5 L240.3,93.5 L256.2,93.5 L256.2,209.5 L240.3,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat2)' points = '320.1,209.5 336.1,209.5 336.1,87.0 320.1,87.0 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M320.1,209.5 L320.1,87.1 L336.0,87.1 L336.0,209.5 L320.1,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat2)' points = '399.9,209.5 415.9,209.5 415.9,88.7 399.9,88.7 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M399.9,209.5 L399.9,88.8 L415.8,88.8 L415.8,209.5 L399.9,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat2)' points = '479.7,209.5 495.7,209.5 495.7,85.2 479.7,85.2 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M479.7,209.5 L479.7,85.3 L495.6,85.3 L495.6,209.5 L479.7,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat2)' points = '559.5,209.5 575.5,209.5 575.5,85.8 559.5,85.8 '/>
+	</g>
+	<path stroke='rgb(148,   0, 211)'  d='M559.5,209.5 L559.5,85.9 L575.4,85.9 L575.4,209.5 L559.5,209.5 Z  '/></g>
+	</g>
+	<g id="gnuplot_plot_2" ><title>React 4ms</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(387.4,33.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" >React 4ms</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<defs>
+		<pattern id='gpPat3' patternUnits='userSpaceOnUse' x='0' y='0' width='8' height='8'>
+			<path style='fill:none; stroke:rgb(0,158,115)' d='M0,0 L8,8 M0,8 L8,0'/>
+		</pattern>
+	</defs>
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat3)' points = '400.0,33.8 419.8,33.8 419.8,20.3 400.0,20.3 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M400.0,33.8 L419.8,33.8 L419.8,20.4 L400.0,20.4 L400.0,33.8 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<defs>
+		<pattern id='gpPat4' patternUnits='userSpaceOnUse' x='0' y='0' width='8' height='8'>
+			<path style='fill:none; stroke:rgb(0,158,115)' d='M0,0 L8,8 M0,8 L8,0'/>
+		</pattern>
+	</defs>
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat4)' points = '96.6,209.5 112.7,209.5 112.7,184.1 96.6,184.1 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M96.6,209.5 L96.6,184.2 L112.6,184.2 L112.6,209.5 L96.6,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat4)' points = '176.4,209.5 192.5,209.5 192.5,182.6 176.4,182.6 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M176.4,209.5 L176.4,182.7 L192.4,182.7 L192.4,209.5 L176.4,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat4)' points = '256.2,209.5 272.3,209.5 272.3,176.1 256.2,176.1 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M256.2,209.5 L256.2,176.2 L272.2,176.2 L272.2,209.5 L256.2,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat4)' points = '336.0,209.5 352.1,209.5 352.1,156.7 336.0,156.7 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M336.0,209.5 L336.0,156.8 L352.0,156.8 L352.0,209.5 L336.0,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat4)' points = '415.8,209.5 431.9,209.5 431.9,181.6 415.8,181.6 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M415.8,209.5 L415.8,181.7 L431.8,181.7 L431.8,209.5 L415.8,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat4)' points = '495.6,209.5 511.7,209.5 511.7,173.2 495.6,173.2 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M495.6,209.5 L495.6,173.3 L511.6,173.3 L511.6,209.5 L495.6,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat4)' points = '575.4,209.5 591.5,209.5 591.5,170.0 575.4,170.0 '/>
+	</g>
+	<path stroke='rgb(  0, 158, 115)'  d='M575.4,209.5 L575.4,170.1 L591.4,170.1 L591.4,209.5 L575.4,209.5 Z  '/></g>
+	</g>
+	<g id="gnuplot_plot_3" ><title>Helix</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(558.4,33.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" >Helix</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<defs>
+		<pattern id='gpPat5' patternUnits='userSpaceOnUse' x='0' y='0' width='8' height='8'>
+			<path style='fill:none; stroke:rgb(86,180,233)' d='M0,0 L8,8 M0,8 L8,0 M0,4 L4,8 L8,4 L4,0 L0,4'/>
+		</pattern>
+	</defs>
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat5)' points = '571.0,33.8 590.8,33.8 590.8,20.3 571.0,20.3 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M571.0,33.8 L590.8,33.8 L590.8,20.4 L571.0,20.4 L571.0,33.8 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<defs>
+		<pattern id='gpPat6' patternUnits='userSpaceOnUse' x='0' y='0' width='8' height='8'>
+			<path style='fill:none; stroke:rgb(86,180,233)' d='M0,0 L8,8 M0,8 L8,0 M0,4 L4,8 L8,4 L4,0 L0,4'/>
+		</pattern>
+	</defs>
+	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat6)' points = '112.6,209.5 128.6,209.5 128.6,197.8 112.6,197.8 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M112.6,209.5 L112.6,197.9 L128.5,197.9 L128.5,209.5 L112.6,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat6)' points = '192.4,209.5 208.4,209.5 208.4,197.8 192.4,197.8 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M192.4,209.5 L192.4,197.9 L208.3,197.9 L208.3,209.5 L192.4,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat6)' points = '272.2,209.5 288.2,209.5 288.2,198.0 272.2,198.0 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M272.2,209.5 L272.2,198.1 L288.1,198.1 L288.1,209.5 L272.2,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat6)' points = '352.0,209.5 368.0,209.5 368.0,197.5 352.0,197.5 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M352.0,209.5 L352.0,197.6 L367.9,197.6 L367.9,209.5 L352.0,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat6)' points = '431.8,209.5 447.8,209.5 447.8,197.1 431.8,197.1 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M431.8,209.5 L431.8,197.2 L447.7,197.2 L447.7,209.5 L431.8,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat6)' points = '511.6,209.5 527.7,209.5 527.7,195.3 511.6,195.3 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M511.6,209.5 L511.6,195.4 L527.6,195.4 L527.6,209.5 L511.6,209.5 Z  '/>	<g stroke='none' shape-rendering='crispEdges'>
+		<polygon  fill = 'url(#gpPat6)' points = '591.4,209.5 607.5,209.5 607.5,194.5 591.4,194.5 '/>
+	</g>
+	<path stroke='rgb( 86, 180, 233)'  d='M591.4,209.5 L591.4,194.6 L607.4,194.6 L607.4,209.5 L591.4,209.5 Z  '/></g>
+	</g>
+	<g id="gnuplot_plot_4" ><title>gnuplot_plot_4</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(104.6,86.9)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >59.6</tspan></text>
+	</g>
+	<g transform="translate(184.4,85.3)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >60.4</tspan></text>
+	</g>
+	<g transform="translate(264.2,87.7)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >59.2</tspan></text>
+	</g>
+	<g transform="translate(344.0,81.2)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >62.5</tspan></text>
+	</g>
+	<g transform="translate(423.8,83.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >61.6</tspan></text>
+	</g>
+	<g transform="translate(503.6,79.4)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >63.4</tspan></text>
+	</g>
+	<g transform="translate(583.4,80.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >63.1</tspan></text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_5" ><title>gnuplot_plot_5</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(120.5,170.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >12.9</tspan></text>
+	</g>
+	<g transform="translate(200.4,169.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >13.7</tspan></text>
+	</g>
+	<g transform="translate(280.2,162.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >17</tspan></text>
+	</g>
+	<g transform="translate(360.0,143.1)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >26.9</tspan></text>
+	</g>
+	<g transform="translate(439.8,168.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >14.2</tspan></text>
+	</g>
+	<g transform="translate(519.6,159.6)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >18.5</tspan></text>
+	</g>
+	<g transform="translate(599.4,156.4)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >20.1</tspan></text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_6" ><title>gnuplot_plot_6</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(136.5,192.1)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >5.9</tspan></text>
+	</g>
+	<g transform="translate(216.3,192.1)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >5.9</tspan></text>
+	</g>
+	<g transform="translate(296.1,192.3)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >5.8</tspan></text>
+	</g>
+	<g transform="translate(375.9,191.7)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >6.1</tspan></text>
+	</g>
+	<g transform="translate(455.7,191.3)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >6.3</tspan></text>
+	</g>
+	<g transform="translate(535.5,189.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >7.2</tspan></text>
+	</g>
+	<g transform="translate(615.3,188.8)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >7.6</tspan></text>
+	</g>
+</g>
+	</g>
+<g fill="none" color="#FFFFFF" stroke="black" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M56.7,13.6 L56.7,209.5 L631.3,209.5 L631.3,13.6 L56.7,13.6 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+</g>
+</svg>
+

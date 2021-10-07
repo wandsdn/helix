@@ -9,6 +9,10 @@ deploying TE on WANs. The emulation framework allows evaluating the control
 plane failure resilience, data-plane failure resilience and TE optimisation
 performance of SDN systems.
 
+The raw results collected to evaluate Helix (presented in the paper) can be
+found in the `SOSR2021_RESULTS/` folder of this repo. Please refer to the
+folder readme file for info on how results were collected.
+
 
 
 ## Repo Overview ##

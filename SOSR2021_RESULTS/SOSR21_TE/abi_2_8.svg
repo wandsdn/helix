@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<svg 
+ width="244" height="400"
+ viewBox="0 0 244 400"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 5.2 patchlevel 8 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="244" height="400" fill="#ffffff"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5' stroke='currentColor'/>
+	<path id='gpPt0' stroke-width='0.148' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.148' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.148' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.148' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.148' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.148' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.148' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+	<path id='gpPt13' stroke-width='0.148' stroke='currentColor' d='M0,1.330 L1.265,0.411 L0.782,-1.067 L-0.782,-1.076 L-1.265,0.411 z'/>
+	<use xlink:href='#gpPt13' id='gpPt14' fill='currentColor' stroke='none'/>
+	<filter id='textbox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='#FFFFFF' flood-opacity='1' result='bgnd'/>
+	  <feComposite in='SourceGraphic' in2='bgnd' operator='atop'/>
+	</filter>
+	<filter id='greybox' filterUnits='objectBoundingBox' x='0' y='0' height='1' width='1'>
+	  <feFlood flood-color='lightgrey' flood-opacity='1' result='grey'/>
+	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
+	</filter>
+</defs>
+<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,154.1 L237.6,154.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,154.1 L66.4,154.1  '/>	<g transform="translate(46.6,160.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,124.9 L237.6,124.9  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,124.9 L66.4,124.9  '/>	<g transform="translate(46.6,130.8)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.2</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,95.7 L237.6,95.7  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,95.7 L66.4,95.7  '/>	<g transform="translate(46.6,101.6)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.4</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,66.6 L237.6,66.6  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,66.6 L66.4,66.6  '/>	<g transform="translate(46.6,72.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.6</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,37.4 L237.6,37.4  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,37.4 L66.4,37.4  '/>	<g transform="translate(46.6,43.3)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.8</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,8.2 L237.6,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,8.2 L66.4,8.2  '/>	<g transform="translate(46.6,14.1)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,154.1 L52.9,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,154.1 L52.9,140.6  '/>	<g transform="translate(52.9,173.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 0</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M83.7,154.1 L83.7,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M83.7,154.1 L83.7,140.6  '/>	<g transform="translate(83.7,173.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 4</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M114.5,154.1 L114.5,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M114.5,154.1 L114.5,140.6  '/>	<g transform="translate(114.5,173.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 8</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M145.3,154.1 L145.3,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M145.3,154.1 L145.3,140.6  '/>	<g transform="translate(145.3,173.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 12</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M176.0,154.1 L176.0,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M176.0,154.1 L176.0,140.6  '/>	<g transform="translate(176.0,173.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 16</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M206.8,154.1 L206.8,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M206.8,154.1 L206.8,140.6  '/>	<g transform="translate(206.8,173.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 20</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M237.6,154.1 L237.6,8.2  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M237.6,154.1 L237.6,140.6  '/>	<g transform="translate(237.6,173.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 24</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,8.2 L52.9,154.1 L237.6,154.1 L237.6,8.2 L52.9,8.2 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(13.0,81.2) rotate(270)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >CDF</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(145.2,195.1)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >Loss \%</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+	<g id="gnuplot_plot_1a" ><title>CSPF</title>
+<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(148,   0, 211)'  d='M96.6,150.0 L97.0,146.0 L99.4,141.9 L102.0,137.9 L105.0,133.8 L106.7,129.8 L106.7,125.7 L106.7,121.7
+		L106.9,117.6 L112.5,113.6 L114.7,109.5 L115.6,105.5 L116.6,101.4 L116.6,97.4 L119.8,93.3 L120.1,89.3
+		L120.5,85.2 L122.3,81.1 L122.9,77.1 L123.0,73.0 L123.8,69.0 L123.9,64.9 L124.1,60.9 L124.7,56.8
+		L124.8,52.8 L126.7,48.7 L126.8,44.7 L127.7,40.6 L130.3,36.6 L136.4,32.5 L142.1,28.5 L142.7,24.4
+		L144.1,20.4 L144.8,16.3 L148.9,12.3 L157.6,8.2  '/>	<use xlink:href='#gpDot' x='96.6' y='150.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='97.0' y='146.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='99.4' y='141.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='102.0' y='137.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='105.0' y='133.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='106.7' y='129.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='106.7' y='125.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='106.7' y='121.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='106.9' y='117.6' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='112.5' y='113.6' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='114.7' y='109.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.6' y='105.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='116.6' y='101.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='116.6' y='97.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='119.8' y='93.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='120.1' y='89.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='120.5' y='85.2' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='122.3' y='81.1' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='122.9' y='77.1' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='123.0' y='73.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='123.8' y='69.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='123.9' y='64.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='124.1' y='60.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='124.7' y='56.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='124.8' y='52.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='126.7' y='48.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='126.8' y='44.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='127.7' y='40.6' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='130.3' y='36.6' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='136.4' y='32.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='142.1' y='28.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='142.7' y='24.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='144.1' y='20.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='144.8' y='16.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='148.9' y='12.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='157.6' y='8.2' color='rgb(148,   0, 211)'/>
+
+</g>
+	</g>
+	<g id="gnuplot_plot_2a" ><title>MCF</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(  0, 158, 115)' stroke-dasharray='8.0,2.0,8.0,2.0'  d='M114.3,150.0 L119.3,146.0 L119.8,141.9 L127.0,137.9 L132.3,133.8 L132.6,129.8 L133.2,125.7 L136.7,121.7
+		L139.9,117.6 L140.9,113.6 L143.4,109.5 L143.4,105.5 L143.9,101.4 L145.9,97.4 L150.7,93.3 L150.9,89.3
+		L152.2,85.2 L153.5,81.1 L156.2,77.1 L156.9,73.0 L158.0,69.0 L158.5,64.9 L162.2,60.9 L162.7,56.8
+		L163.1,52.8 L163.5,48.7 L165.4,44.7 L168.3,40.6 L172.4,36.6 L172.7,32.5 L174.5,28.5 L176.6,24.4
+		L177.4,20.4 L180.6,16.3 L184.7,12.3 L184.9,8.2  '/>	<use xlink:href='#gpDot' x='114.3' y='150.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='119.3' y='146.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='119.8' y='141.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='127.0' y='137.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='132.3' y='133.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='132.6' y='129.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='133.2' y='125.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='136.7' y='121.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='139.9' y='117.6' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='140.9' y='113.6' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='143.4' y='109.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='143.4' y='105.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='143.9' y='101.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='145.9' y='97.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='150.7' y='93.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='150.9' y='89.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='152.2' y='85.2' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='153.5' y='81.1' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='156.2' y='77.1' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='156.9' y='73.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='158.0' y='69.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='158.5' y='64.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='162.2' y='60.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='162.7' y='56.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='163.1' y='52.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='163.5' y='48.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='165.4' y='44.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='168.3' y='40.6' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='172.4' y='36.6' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='172.7' y='32.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='174.5' y='28.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='176.6' y='24.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='177.4' y='20.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='180.6' y='16.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='184.7' y='12.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='184.9' y='8.2' color='rgb(  0, 158, 115)'/>
+
+</g>
+	</g>
+	<g id="gnuplot_plot_3a" ><title>Helix</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(229,  30,  16)' stroke-dasharray='12.0,6.0,4.0,6.0'  d='M94.8,150.0 L99.8,146.0 L100.1,141.9 L100.7,137.9 L100.7,133.8 L101.6,129.8 L101.8,125.7 L102.8,121.7
+		L103.2,117.6 L103.5,113.6 L104.2,109.5 L105.5,105.5 L109.7,101.4 L109.8,97.4 L109.8,93.3 L110.6,89.3
+		L110.6,85.2 L110.9,81.1 L111.4,77.1 L111.7,73.0 L112.1,69.0 L112.8,64.9 L112.9,60.9 L113.5,56.8
+		L113.6,52.8 L114.5,48.7 L114.5,44.7 L116.0,40.6 L116.3,36.6 L117.8,32.5 L118.5,28.5 L118.9,24.4
+		L121.2,20.4 L123.2,16.3 L123.4,12.3 L127.4,8.2  '/>	<use xlink:href='#gpDot' x='94.8' y='150.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='99.8' y='146.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='100.1' y='141.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='100.7' y='137.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='100.7' y='133.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='101.6' y='129.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='101.8' y='125.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='102.8' y='121.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='103.2' y='117.6' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='103.5' y='113.6' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='104.2' y='109.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='105.5' y='105.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='109.7' y='101.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='109.8' y='97.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='109.8' y='93.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='110.6' y='89.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='110.6' y='85.2' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='110.9' y='81.1' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='111.4' y='77.1' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='111.7' y='73.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='112.1' y='69.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='112.8' y='64.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='112.9' y='60.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='113.5' y='56.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='113.6' y='52.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='114.5' y='48.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='114.5' y='44.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='116.0' y='40.6' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='116.3' y='36.6' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='117.8' y='32.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='118.5' y='28.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='118.9' y='24.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='121.2' y='20.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='123.2' y='16.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='123.4' y='12.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='127.4' y='8.2' color='rgb(229,  30,  16)'/>
+
+</g>
+	</g>
+<g fill="none" color="#FFFFFF" stroke="rgb(229,  30,  16)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,8.2 L52.9,154.1 L237.6,154.1 L237.6,8.2 L52.9,8.2 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,354.1 L237.6,354.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,354.1 L66.4,354.1  '/>	<g transform="translate(46.6,360.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,324.9 L237.6,324.9  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,324.9 L66.4,324.9  '/>	<g transform="translate(46.6,330.8)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.2</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,295.7 L237.6,295.7  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,295.7 L66.4,295.7  '/>	<g transform="translate(46.6,301.6)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.4</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,266.5 L237.6,266.5  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,266.5 L66.4,266.5  '/>	<g transform="translate(46.6,272.4)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.6</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,237.3 L237.6,237.3  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,237.3 L66.4,237.3  '/>	<g transform="translate(46.6,243.2)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 0.8</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,208.1 L237.6,208.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,208.1 L66.4,208.1  '/>	<g transform="translate(46.6,214.0)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="end">
+		<text><tspan font-family=",Linux Libertine O" > 1</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M200.7,354.1 L200.7,208.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M200.7,354.1 L200.7,340.6  '/>	<g transform="translate(200.7,373.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >80</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M237.6,354.1 L237.6,208.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M237.6,354.1 L237.6,340.6  '/>	<g transform="translate(237.6,373.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text xml:space="preserve"><tspan font-family=",Linux Libertine O"  xml:space="preserve">100  </tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M52.9,354.1 L52.9,208.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,354.1 L52.9,340.6  '/>	<g transform="translate(52.9,373.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 0</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M89.8,354.1 L89.8,208.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M89.8,354.1 L89.8,340.6  '/>	<g transform="translate(89.8,373.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 20</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M126.8,354.1 L126.8,208.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M126.8,354.1 L126.8,340.6  '/>	<g transform="translate(126.8,373.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 40</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="gray" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(187, 187, 187)' stroke-dasharray='2,4' class="gridline"  d='M163.7,354.1 L163.7,208.1  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M163.7,354.1 L163.7,340.6  '/>	<g transform="translate(163.7,373.5)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" > 60</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,208.1 L52.9,354.1 L237.6,354.1 L237.6,208.1 L52.9,208.1 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(13.0,281.1) rotate(270)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >CDF</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(145.2,395.1)" stroke="none" fill="black" font-family=",Linux Libertine O" font-size="18.00"  text-anchor="middle">
+		<text><tspan font-family=",Linux Libertine O" >\# Path Changes</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+	<g id="gnuplot_plot_1b" ><title>CSPF</title>
+<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(148,   0, 211)'  d='M52.9,350.0 L86.1,346.0 L97.2,341.9 L100.9,337.9 L104.6,333.8 L104.6,329.8 L104.6,325.7 L108.3,321.7
+		L108.3,317.6 L108.3,313.5 L108.3,309.5 L108.3,305.4 L108.3,301.4 L108.3,297.3 L108.3,293.3 L108.3,289.2
+		L112.0,285.2 L112.0,281.1 L112.0,277.0 L112.0,273.0 L112.0,268.9 L115.7,264.9 L115.7,260.8 L115.7,256.8
+		L115.7,252.7 L115.7,248.7 L115.7,244.6 L115.7,240.5 L119.4,236.5 L119.4,232.4 L123.1,228.4 L123.1,224.3
+		L123.1,220.3 L126.8,216.2 L126.8,212.2 L134.2,208.1  '/>	<use xlink:href='#gpDot' x='52.9' y='350.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='86.1' y='346.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='97.2' y='341.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='100.9' y='337.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='104.6' y='333.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='104.6' y='329.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='104.6' y='325.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='321.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='317.6' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='313.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='309.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='305.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='301.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='297.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='293.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='108.3' y='289.2' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='112.0' y='285.2' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='112.0' y='281.1' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='112.0' y='277.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='112.0' y='273.0' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='112.0' y='268.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.7' y='264.9' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.7' y='260.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.7' y='256.8' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.7' y='252.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.7' y='248.7' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.7' y='244.6' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='115.7' y='240.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='119.4' y='236.5' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='119.4' y='232.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='123.1' y='228.4' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='123.1' y='224.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='123.1' y='220.3' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='126.8' y='216.2' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='126.8' y='212.2' color='rgb(148,   0, 211)'/>
+
+	<use xlink:href='#gpDot' x='134.2' y='208.1' color='rgb(148,   0, 211)'/>
+
+</g>
+	</g>
+	<g id="gnuplot_plot_2b" ><title>MCF</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(  0, 158, 115)' stroke-dasharray='8.0,2.0,8.0,2.0'  d='M52.9,350.0 L123.1,346.0 L126.8,341.9 L134.2,337.9 L145.3,333.8 L148.9,329.8 L152.6,325.7 L152.6,321.7
+		L156.3,317.6 L156.3,313.5 L156.3,309.5 L160.0,305.4 L160.0,301.4 L167.4,297.3 L167.4,293.3 L167.4,289.2
+		L167.4,285.2 L171.1,281.1 L171.1,277.0 L174.8,273.0 L174.8,268.9 L178.5,264.9 L178.5,260.8 L178.5,256.8
+		L178.5,252.7 L182.2,248.7 L182.2,244.6 L185.9,240.5 L189.6,236.5 L189.6,232.4 L193.3,228.4 L197.0,224.3
+		L197.0,220.3 L197.0,216.2 L204.4,212.2 L219.1,208.1  '/>	<use xlink:href='#gpDot' x='52.9' y='350.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='123.1' y='346.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='126.8' y='341.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='134.2' y='337.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='145.3' y='333.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='148.9' y='329.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='152.6' y='325.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='152.6' y='321.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='156.3' y='317.6' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='156.3' y='313.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='156.3' y='309.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='160.0' y='305.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='160.0' y='301.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='167.4' y='297.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='167.4' y='293.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='167.4' y='289.2' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='167.4' y='285.2' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='171.1' y='281.1' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='171.1' y='277.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='174.8' y='273.0' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='174.8' y='268.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='178.5' y='264.9' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='178.5' y='260.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='178.5' y='256.8' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='178.5' y='252.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='182.2' y='248.7' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='182.2' y='244.6' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='185.9' y='240.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='189.6' y='236.5' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='189.6' y='232.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='193.3' y='228.4' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='197.0' y='224.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='197.0' y='220.3' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='197.0' y='216.2' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='204.4' y='212.2' color='rgb(  0, 158, 115)'/>
+
+	<use xlink:href='#gpDot' x='219.1' y='208.1' color='rgb(  0, 158, 115)'/>
+
+</g>
+	</g>
+	<g id="gnuplot_plot_3b" ><title>Helix</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="4.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(229,  30,  16)' stroke-dasharray='12.0,6.0,4.0,6.0'  d='M52.9,350.0 L52.9,346.0 L52.9,341.9 L52.9,337.9 L52.9,333.8 L52.9,329.8 L56.6,325.7 L60.3,321.7
+		L60.3,317.6 L67.7,313.5 L67.7,309.5 L67.7,305.4 L67.7,301.4 L67.7,297.3 L71.4,293.3 L71.4,289.2
+		L71.4,285.2 L71.4,281.1 L71.4,277.0 L71.4,273.0 L75.1,268.9 L75.1,264.9 L75.1,260.8 L78.8,256.8
+		L82.5,252.7 L82.5,248.7 L82.5,244.6 L86.1,240.5 L86.1,236.5 L86.1,232.4 L86.1,228.4 L86.1,224.3
+		L89.8,220.3 L97.2,216.2 L104.6,212.2 L112.0,208.1  '/>	<use xlink:href='#gpDot' x='52.9' y='350.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='52.9' y='346.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='52.9' y='341.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='52.9' y='337.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='52.9' y='333.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='52.9' y='329.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='56.6' y='325.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='60.3' y='321.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='60.3' y='317.6' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='67.7' y='313.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='67.7' y='309.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='67.7' y='305.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='67.7' y='301.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='67.7' y='297.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='71.4' y='293.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='71.4' y='289.2' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='71.4' y='285.2' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='71.4' y='281.1' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='71.4' y='277.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='71.4' y='273.0' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='75.1' y='268.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='75.1' y='264.9' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='75.1' y='260.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='78.8' y='256.8' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='82.5' y='252.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='82.5' y='248.7' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='82.5' y='244.6' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='86.1' y='240.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='86.1' y='236.5' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='86.1' y='232.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='86.1' y='228.4' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='86.1' y='224.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='89.8' y='220.3' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='97.2' y='216.2' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='104.6' y='212.2' color='rgb(229,  30,  16)'/>
+
+	<use xlink:href='#gpDot' x='112.0' y='208.1' color='rgb(229,  30,  16)'/>
+
+</g>
+	</g>
+<g fill="none" color="#FFFFFF" stroke="rgb(229,  30,  16)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='black'  d='M52.9,208.1 L52.9,354.1 L237.6,354.1 L237.6,208.1 L52.9,208.1 Z  '/></g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+</g>
+</svg>
+
