@@ -1,0 +1,43 @@
+#!/usr/bin/python
+
+""" Topology module generated from GML file
+FILE        : {GML_FILE}
+TOPO NAME   : {TOPO_NAME}
+
+-----------------------------------
+GML FILE ATTRIBUTES:
+{GML_FILE_ATTRS}-----------------------------------
+"""
+
+# FIX IMPORT ISSUES CAUSED BY MININET
+import sys, os
+sys.path.append(os.path.abspath("."))
+# -----------------------------------
+
+from TopoBase import TopoBase
+from mininet.link import TCLink
+
+
+class NetTopo(TopoBase):
+    """ Class that creates the topology """
+
+
+    def __init__(self, inNamespace=True):
+        super(NetTopo, self).__init__("{TOPO_NAME}", inNamespace)
+
+
+    def build(self):
+        """ Build the test net topology """
+
+        # ---- Create our hosts ----
+{HOSTS}
+
+        # ---- Create a OF switch ----
+{SWITCHES}
+
+        # ---- Create the Links ----
+{LINKS}
+
+topos = {{
+    "topo": NetTopo
+}}

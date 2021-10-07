@@ -1,0 +1,108 @@
+failure_name: "Multiple link failure FatTree"
+failed_links:
+    - sw1-sw17
+    - sw7-sw5
+    - sw6-sw3
+    - sw18-sw20
+logger_location:
+    reactive:
+        primary:
+            switch:
+                - sw1
+                - sw7
+                - sw6
+                - sw18
+            interface:
+                - sw1-eth4
+                - sw7-eth1
+                - sw6-eth1
+                - sw18-eth4
+            port:
+                - 4
+                - 1
+                - 1
+                - 4
+        secondary:
+            switch:
+                - sw5
+                - sw7
+                - sw6
+                - sw6
+            interface:
+                - sw5-eth2
+                - sw7-eth2
+                - sw6-eth2
+                - sw6-eth4
+            port:
+                - 2
+                - 2
+                - 2
+                - 4
+    proactive:
+        primary:
+            switch:
+                - sw1
+                - sw7
+                - sw6
+                - sw18
+            interface:
+                - sw1-eth4
+                - sw7-eth1
+                - sw6-eth1
+                - sw18-eth4
+            port:
+                - 4
+                - 1
+                - 1
+                - 4
+        secondary:
+            switch:
+                - sw1
+                - sw7
+                - sw6
+                - sw18
+            interface:
+                - sw1-eth2
+                - sw7-eth2
+                - sw6-eth4
+                - sw18-eth3
+            port:
+                - 2
+                - 2
+                - 4
+                - 3
+    proactive_alt:
+        primary:
+            switch:
+                - sw1
+                - sw7
+                - sw6
+                - sw18
+            interface:
+                - sw1-eth4
+                - sw7-eth1
+                - sw6-eth1
+                - sw18-eth4
+            port:
+                - 4
+                - 1
+                - 1
+                - 4
+        secondary:
+            switch:
+                - sw1
+                - sw7
+                - sw6
+                - sw18
+            interface:
+                - sw1-eth2
+                - sw7-eth2
+                - sw6-eth4
+                - sw18-eth3
+            port:
+                - 2
+                - 2
+                - 4
+                - 3
+usable_on_topo:
+    - "FatTree"

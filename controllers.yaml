@@ -1,0 +1,27 @@
+reactive:
+    start_command:
+        - ryu-manager
+        - ReactiveController.py
+        - --observe-links
+        - --default-log-level
+        - 50
+        - --config-file
+        - controller_simtest.conf
+proactive:
+    start_command:
+        - ryu-manager
+        - ProactiveController.py
+        - --observe-links
+        - --default-log-level
+        - 50
+        - --config-file
+        - controller_simtest.conf
+proactive_alt:
+    start_command:
+        - ryu-manager
+        - ProactiveControllerAlt.py
+        - --observe-links
+        - --default-log-level
+        - 50
+        - --config-file
+        - controller_simtest.conf

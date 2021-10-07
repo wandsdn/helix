@@ -1,0 +1,55 @@
+scenario_name: "MDCV2 Device Failure Scenario 1"
+scenario:
+    - delay: 0
+      actions:
+          - ctrl: c1
+            inst_id: 0
+            op: fail
+          - ctrl: c2
+            inst_id: 0
+            op: fail
+          - ctrl: c3
+            inst_id: 0
+            op: fail
+      expected:
+        local_leader_elect: True
+        local_path_recomp: False
+        root_path_recomp: False
+    - delay: 0
+      actions:
+          - ctrl: c2
+            inst_id: 0
+            op: start
+      expected:
+        local_leader_elect: True
+        local_path_recomp: False
+        root_path_recomp: False
+    - delay: 0
+      actions:
+          - ctrl: c2
+            inst_id: 1
+            op: fail
+      expected:
+        local_leader_elect: True
+        local_path_recomp: False
+        root_path_recomp: False
+    - delay: 0
+      monitor_wait: 20
+      actions:
+          - ctrl: c2
+            inst_id: 0
+            op: fail
+      expected:
+        local_leader_elect: False
+        local_path_recomp: False
+        root_path_recomp: True
+    - delay: 0
+      monitor_wait: 20
+      actions:
+          - ctrl: c2
+            inst_id: 1
+            op: start
+      expected:
+        local_leader_elect: True
+        local_path_recomp: False
+        root_path_recomp: True

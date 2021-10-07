@@ -1,0 +1,89 @@
+failure_name: "Multiple link failure"
+failed_links:
+    - s2-s3
+    - s1-s2
+    - s4-s5
+logger_location:
+    reactive:
+        primary:
+            switch:
+                - s2
+                - s1
+                - s4
+            interface:
+                - s2-eth2
+                - s1-eth2
+                - s4-eth3
+            port:
+                - 2
+                - 2
+                - 3
+        secondary:
+            switch:
+                - s2
+                - s1
+                - s4
+            interface:
+                - s2-eth4
+                - s1-eth3
+                - s4-eth2
+            port:
+                - 4
+                - 3
+                - 2
+    proactive:
+        primary:
+            switch:
+                - s2
+                - s1
+                - s4
+            interface:
+                - s2-eth2
+                - s1-eth2
+                - s4-eth3
+            port:
+                - 2
+                - 2
+                - 3
+        secondary:
+            switch:
+                - s2
+                - s1
+                - s4
+            interface:
+                - s2-eth4
+                - s1-eth3
+                - s4-eth2
+            port:
+                - 4
+                - 3
+                - 2
+    proactive_alt:
+        primary:
+            switch:
+                - s2
+                - s1
+                - s4
+            interface:
+                - s2-eth2
+                - s1-eth2
+                - s4-eth3
+            port:
+                - 2
+                - 2
+                - 3
+        secondary:
+            switch:
+                - s2
+                - s1
+                - s4
+            interface:
+                - s2-eth4
+                - s1-eth3
+                - s4-eth2
+            port:
+                - 4
+                - 3
+                - 2
+usable_on_topo:
+    - "TestNet"

@@ -1,0 +1,33 @@
+failure_name: "Single link Failure"
+failed_links:
+    - s1-s2
+logger_location:
+    reactive:
+        primary:
+            switch: s1
+            interface: s1-eth2
+            port: 2
+        secondary:
+            switch: s1
+            interface: s1-eth3
+            port: 3
+    proactive:
+        primary:
+            switch: s1
+            interface: s1-eth2
+            port: 2
+        secondary:
+            switch: s1
+            interface: s1-eth3
+            port: 3
+    proactive_alt:
+        primary:
+            switch: s1
+            interface: s1-eth2
+            port: 2
+        secondary:
+            switch: s1
+            interface: s1-eth3
+            port: 3
+usable_on_topo:
+    - "TestNet"

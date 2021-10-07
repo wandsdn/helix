@@ -1,0 +1,50 @@
+scenario_name: "MDCV2 - Scean 2 Cascading Failures"
+scenario:
+    - delay: 0
+      actions:
+          - ctrl: c2
+            inst_id: 0
+            op: fail
+          - ctrl: c2
+            inst_id: 1
+            op: fail
+            wait: 2
+          - ctrl: c2
+            inst_id: 2
+            op: fail
+            wait: 2
+          - ctrl: c2
+            inst_id: 0
+            op: start
+      expected:
+        local_leader_elect: True
+        local_path_recomp: False
+        root_path_recomp: False
+    - delay: 0
+      actions:
+          - ctrl: c2
+            inst_id: 1
+            op: start
+          - ctrl: c2
+            inst_id: 2
+            op: start
+      expected:
+        local_leader_elect: True
+        local_path_recomp: False
+        root_path_recomp: False
+    - delay: 0
+      actions:
+          - ctrl: c2
+            inst_id: 1
+            op: fail
+          - ctrl: c2
+            inst_id: 0
+            op: fail
+          - ctrl: c2
+            inst_id: 2
+            op: fail
+            wait: 4
+      expected:
+        local_leader_elect: True
+        local_path_recomp: False
+        root_path_recomp: True

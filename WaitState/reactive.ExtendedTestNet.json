@@ -1,0 +1,20 @@
+{
+    "s1": {
+        "dump-flows": [
+            ["h1-h2", "in_port=1,.+ actions=push_vlan:0x8100,set_field:{VLAN_GID}->vlan_vid,output:2"],
+            ["h2-h1", "in_port=2,dl_vlan={GID} actions=pop_vlan,.+,output:1"]
+        ]
+    },
+    "s2": {
+        "dump-flows": [
+            ["h1-h2", "in_port=1,dl_vlan={GID} actions=output:2"],
+            ["h2-h1", "in_port=2,dl_vlan={GID} actions=output:1"]
+        ]
+    },
+    "s3": {
+        "dump-flows": [
+            ["h1-h2", "in_port=1,dl_vlan={GID} actions=pop_vlan,.+,output:2"],
+            ["h2-h1", "ip,in_port=2,.+ actions=push_vlan:0x8100,set_field:{VLAN_GID}->vlan_vid,output:1"]
+        ]
+    }
+}

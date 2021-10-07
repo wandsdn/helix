@@ -1,0 +1,122 @@
+{
+    "sw1": {
+        "dump-flows": [
+            ["h2-h1", "dl_vlan={GID} actions=group:{GID}"],
+            ["h1-h2", "dl_vlan={GID} actions=group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:4,actions=output:4,bucket=watch_port:2,actions=output:2"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:2,actions=output:2"]
+        ]
+    },
+    "sw3": {
+        "dump-flows": [
+            ["h2-h1", "dl_vlan={GID} actions=group:{GID}"],
+            ["h1-h2", "dl_vlan={GID} actions=group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:4,actions=output:4,bucket=watch_port:2,actions=output:2"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:2,actions=output:2"]
+        ]
+    },
+    "sw5": {
+        "dump-flows": [
+            ["h2-h1", "dl_vlan={GID} actions=group:{GID}"],
+            ["h1-h2", "dl_vlan={GID} actions=group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:4,actions=output:4"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:3,actions=output:3,bucket=watch_port:4,actions=output:4"]
+        ]
+    },
+    "sw6": {
+        "dump-flows": [
+            ["h2-h1", "dl_vlan={GID} actions=group:{GID}"],
+            ["h1-h2", "dl_vlan={GID} actions=group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:4,actions=output:4"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:3,actions=output:3,bucket=watch_port:4,actions=output:4"]
+        ]
+    },
+    "sw7": {
+        "dump-flows": [
+            ["h2-h1", "dl_vlan={GID} actions=pop_vlan,.+,group:{GID}"],
+            ["h1-h2", "ip,in_port=3,.+ actions=push_vlan:0x8100,set_field:{VLAN_GID}->vlan_vid,group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:2,actions=output:2"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:3,actions=output:3"]
+        ]
+    },
+    "sw8": {
+        "dump-flows": [
+            ["h2-h1", "in_port=1,dl_vlan={GID} actions=output:2"],
+            ["h2-h1", "in_port=2,dl_vlan={GID} actions=output:1"],
+            ["h1-h2", "in_port=1,dl_vlan={GID} actions=output:2"],
+            ["h1-h2", "in_port=2,dl_vlan={GID} actions=output:1"]
+        ]
+    },
+    "sw9": {
+        "dump-flows": [
+            ["h2-h1", "in_port=3,dl_vlan={GID} actions=output:1"],
+            ["h2-h1", "in_port=1,dl_vlan={GID} actions=output:3"],
+            ["h1-h2", "in_port=1,dl_vlan={GID} actions=output:3"],
+            ["h1-h2", "in_port=3,dl_vlan={GID} actions=output:1"]
+        ]
+    },
+    "sw10": {
+        "dump-flows": [
+            ["h2-h1", "in_port=1,dl_vlan={GID} actions=output:3"],
+            ["h2-h1", "in_port=3,dl_vlan={GID} actions=output:1"],
+            ["h1-h2", "in_port=3,dl_vlan={GID} actions=output:1"],
+            ["h1-h2", "in_port=1,dl_vlan={GID} actions=output:3"]
+        ]
+    },
+    "sw11": {
+        "dump-flows": [
+            ["h2-h1", "in_port=2,dl_vlan={GID} actions=output:1"],
+            ["h2-h1", "in_port=1,dl_vlan={GID} actions=output:2"],
+            ["h1-h2", "in_port=1,dl_vlan={GID} actions=output:2"],
+            ["h1-h2", "in_port=2,dl_vlan={GID} actions=output:1"]
+        ]
+    },
+    "sw17": {
+        "dump-flows": [
+            ["h2-h1", "dl_vlan={GID} actions=group:{GID}"],
+            ["h1-h2", "dl_vlan={GID} actions=group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:4,actions=output:4,bucket=watch_port:3,actions=output:3"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:3,actions=output:3"]
+        ]
+    },
+    "sw18": {
+        "dump-flows": [
+            ["h2-h1", "dl_vlan={GID} actions=group:{GID}"],
+            ["h1-h2", "dl_vlan={GID} actions=group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:4,actions=output:4,bucket=watch_port:3,actions=output:3"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:3,actions=output:3"]
+        ]
+    },
+    "sw19": {
+        "dump-flows": [
+            ["h2-h1", "in_port=1,dl_vlan={GID} actions=output:2"],
+            ["h2-h1", "in_port=2,dl_vlan={GID} actions=output:1"],
+            ["h1-h2", "in_port=2,dl_vlan={GID} actions=output:1"],
+            ["h1-h2", "in_port=1,dl_vlan={GID} actions=output:2"]
+        ]
+    },
+    "sw20": {
+        "dump-flows": [
+            ["h1-h2", "dl_vlan={GID} actions=pop_vlan,.+,group:{GID}"],
+            ["h2-h1", "ip,in_port=3,.+ actions=push_vlan:0x8100,set_field:{VLAN_GID}->vlan_vid,group:{GID}"]
+        ],
+        "dump-groups": [
+            ["h1-h2", "group_id={GID},type=ff,bucket=watch_port:3,actions=output:3"],
+            ["h2-h1", "group_id={GID},type=ff,bucket=watch_port:1,actions=output:1,bucket=watch_port:2,actions=output:2"]
+        ]
+    }
+}

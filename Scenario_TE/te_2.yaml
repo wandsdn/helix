@@ -1,0 +1,46 @@
+scenario_name: "Multi Host Topo of Comparison Paper"
+scenario:
+    proactive:
+        send:
+            - src_host: h1
+              dest_addr: "10.0.4.1"
+              rate: 128M
+              delay: 0
+            - src_host: h2
+              dest_addr: "10.0.4.1"
+              rate: 256M
+              delay: 10
+            - src_host: h3
+              dest_addr: "10.0.4.1"
+              rate: 384M
+              delay: 20
+        receive:
+            - host: h4
+        stream_time: 50
+    proactive_alt:
+        send:
+            - src_host: h1
+              dest_addr: "10.0.4.1"
+              rate: 128M
+              delay: 0
+            - src_host: h2
+              dest_addr: "10.0.4.1"
+              rate: 256M
+              delay: 10
+            - src_host: h3
+              dest_addr: "10.0.4.1"
+              rate: 384M
+              delay: 20
+        receive:
+            - host: h4
+        stream_time: 50
+usable_on_topo:
+    - "MultiHostCompPaper"
+port_desc: |
+    dpid,port,speed
+    2,3,600000000
+    3,1,600000000
+te_conf:
+    interval: 1
+    threshold: 0.90
+    consolidate_time: 1

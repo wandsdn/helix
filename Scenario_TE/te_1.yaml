@@ -1,0 +1,38 @@
+scenario_name: "Simple TE test"
+scenario:
+    proactive:
+        send:
+            - src_host: h1
+              dest_addr: "10.0.3.1"
+              rate: 60M
+              delay: 0
+            - src_host: h2
+              dest_addr: "10.0.3.1"
+              rate: 60M
+              delay: 10
+        receive:
+            - host: h3
+        stream_time: 40
+    proactive_alt:
+        send:
+            - src_host: h1
+              dest_addr: "10.0.3.1"
+              rate: 60M
+              delay: 0
+            - src_host: h2
+              dest_addr: "10.0.3.1"
+              rate: 60M
+              delay: 10
+        receive:
+            - host: h3
+        stream_time: 40
+usable_on_topo:
+    - "MultiHost"
+port_desc: |
+    dpid,port,speed
+    2,3,100000000
+    3,1,100000000
+te_conf:
+    interval: 5
+    threshold: 0.90
+    consolidate_time: 1

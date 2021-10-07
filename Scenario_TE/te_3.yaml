@@ -1,0 +1,37 @@
+scenario_name: "MPLS Comp Topo TE"
+scenario:
+    proactive:
+        send:
+            - src_host: h1
+              dest_addr: "10.0.3.1"
+              rate: 70M
+              delay: 0
+            - src_host: h2
+              dest_addr: "10.0.3.1"
+              rate: 50M
+              delay: 10
+        receive:
+            - host: h3
+        stream_time: 40
+    proactive_alt:
+        send:
+            - src_host: h1
+              dest_addr: "10.0.3.1"
+              rate: 70M
+              delay: 0
+            - src_host: h2
+              dest_addr: "10.0.3.1"
+              rate: 50M
+              delay: 10
+        receive:
+            - host: h3
+        stream_time: 40
+usable_on_topo:
+    - "MPLSCompTopo"
+port_desc: |
+    dpid,port,speed
+    8,4,100000000
+te_conf:
+    interval: 1
+    threshold: 0.90
+    consolidate_time: 1
