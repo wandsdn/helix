@@ -7,8 +7,9 @@ other instances in the are to detect the failure and switch over to a new
 master controller.
 
 Usage:
-    sudo ./EmulateCtrlFail.py --topo <topology> --sw_ctrl_map <map>
-        --scenario <scen> --ctrl_options [ctrl_opt] --disable_te
+    sudo ./EmulateCtrlFail.py --topo <topology> --sw_ctrl_map <map> \
+        --scenario <scen> --ctrl_options [ctrl_opt] \
+        --config_file [config_file]
 
     <topology> - topology module to use for emulation
     <map> - Switch to controller mapping file that describes domains in topo
@@ -18,9 +19,9 @@ Usage:
         error, critical). Defaults to critical
     [ctrl_log_level] - Optional controller logging level (debug, info, warning,
         error, critical). Defaults to critical.
-    --disable_te - Optional flag that disables stats collection in the
-        controller configuration. The controller will not query the network
-        for statitcs or perform TE during the experiment.
+    [config_file] - Optional configuration file to use for emulator. Specifies
+        start command and other config attributes. Defaults to
+        "EmulatorConfigs/config.CtrlFail.yaml".
 """
 
 import os
@@ -745,19 +746,19 @@ if __name__ == "__main__":
         help="Emulator log level (debug, info, warning, error, critical)")
     parser.add_argument("--ctrl_log_level", type=str, default="critical",
         help="Controller log level (debug, info, warning, error, critical)")
-    parser.add_argument("--disable_te", required=False, action="store_true",
-        help="Tell controller to not collect stats and perform TE")
+    parser.add_argument("--config_file", type=str,
+        default="EmulatorConfigs/config.CtrlFail.yaml",
+        help="Framework config file (specify start cmd and config attr)")
     args = parser.parse_args()
 
     # Dump the experiment configuration info
     lg.critical("Running experiment\n")
+    lg.critical("Config  : %s\n" % args.config_file)
     lg.critical("Topo    : %s\n" % args.topo)
     lg.critical("Scen    : %s\n" % args.scenario)
     lg.critical("Map     : %s\n" % args.sw_ctrl_map)
     if args.ctrl_options is not None:
         lg.critical("Ctrl Opt: %s\n" % args.ctrl_options)
-    if args.disable_te:
-        lg.critical("No Controller TE\n")
     lg.critical("~" * 40)
     lg.critical("\n")
 
@@ -779,12 +780,8 @@ if __name__ == "__main__":
         # Initiate a new controller manager and run emulation experiment
         controllers = ControllerManager(map=args.sw_ctrl_map,
                         ctrl_channel_opts=ctrl_channel_options,
-                        log_level=args.ctrl_log_level)
-
-        # Disable TE if flag was set
-        if (args.disable_te):
-            controllers.set_ctrl_config("stats", "collect", False)
-
+                        log_level=args.ctrl_log_level,
+                        config_file=args.config_file)
         net = controllers.start(topo)
         run()
     except:

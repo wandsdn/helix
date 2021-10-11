@@ -5,7 +5,8 @@ performance test on a topology with a sepecific controller.
 
 Usage:
     sudo ./EmulateTE.py --topo <topology> --controller <ctrl_name> --scenario \
-        <scen> --sw_ctrl_map [map] --ctrl_options [ctrl_opts]
+        <scen> --sw_ctrl_map [map] --ctrl_options [ctrl_opts] \
+        --config_file [config_file]
 
     <topology> - Topology module to use for the emulation
     <ctrl_name> - Name of the controller to use. See 'controllers_te.yaml' for
@@ -19,6 +20,9 @@ Usage:
         error, critical). Defaults to critical.
     [ctrl_log_level] - Optional controller logging level (debug, info, warning,
         error, critical). Defaults to critical.
+    [config_file] - Optional configuration file to use for emulator. Specifies
+        start command and other config attributes. Defaults to
+        "EmulatorConfigs/config.TE.yaml".
 """
 
 import os
@@ -523,6 +527,9 @@ if __name__ == "__main__":
         help="Emulator log level (debug, info, warning, error, critical)")
     parser.add_argument("--ctrl_log_level", type=str, default="critical",
         help="Controller log level (debug, info, warning, error, critical)")
+    parser.add_argument("--config_file", type=str,
+        default="EmulatorConfigs/config.TE.yaml",
+        help="Framework config file (specify start cmd and config attr)")
     args = parser.parse_args()
 
     # Load the topology module, TE scenario and validate attributes/run
@@ -563,7 +570,8 @@ if __name__ == "__main__":
         controllers = ControllerManager(ports_data=ports_data,
                         map=sw_ctrl_map,
                         ctrl_channel_opts=ctrl_channel_options,
-                        log_level=args.ctrl_log_level)
+                        log_level=args.ctrl_log_level,
+                        config_file=args.config_file)
 
         # If TE config defined in scenario, ovewrite default attribute values
         interval = 1
@@ -578,9 +586,6 @@ if __name__ == "__main__":
                 consolidate_time = SCENARIO["te_conf"]["consolidate_time"]
 
         # Set controller configuration attributes
-        controllers.set_ctrl_config("application", "optimise_protection", False)
-        controllers.set_ctrl_config("stats", "collect", True)
-        controllers.set_ctrl_config("stats", "collect_port", True)
         controllers.set_ctrl_config("stats", "interval", interval)
         controllers.set_ctrl_config("te", "utilisation_threshold", threshold)
         controllers.set_ctrl_config("te", "consolidate_time", consolidate_time)

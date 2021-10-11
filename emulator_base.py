@@ -9,6 +9,7 @@ import csv
 import json
 import yaml
 import time
+import string
 
 # Import the local controller base to use static method to compute GID
 from TopoDiscoveryController import TopoDiscoveryController
@@ -18,6 +19,40 @@ from mininet.node import RemoteController, OVSSwitch
 from mininet.log import info, warn, lg
 from Networks.TopoBase import CustomCtrlSw
 
+
+# ---------- STRING FORMATTERS ----------
+
+class PartialStrFormat(string.Formatter):
+    """ Class that defines a partial formatter that does not throw an error if
+    a string contains placeholders with no provided value. For placeholders
+    with no provided value, the formatter will output the placeholder name
+    surrounded by curly braces (initial placeholder syntax). Note: To get the
+    name of the placeholder, the formatter get field method returns a tuple
+    value where the first field is None and the second is assumed to be the
+    field name.
+
+    The class needs to be instantiated before using the formatter!
+    """
+    def get_field(self, field_name, args, kwards):
+        # Return special null tuple if no value provided for placeholder
+        # (supress exception)
+        try:
+            val=super(PartialStrFormat, self).get_field(field_name, args,
+                                                kwards)
+        except (KeyError, AttributeError):
+            val=(None,field_name),field_name
+        return val
+
+    def format_field(self, value, spec):
+        # If a special null tuple found, output the initial placeholder
+        # name
+        if (isinstance(value, tuple) and len(value) == 2 and
+                            value[0] == None and not value[1] == None):
+            return "{%s}" % value[1]
+        return super(PartialStrFormat, self).format_field(value, spec)
+
+# Instantiate the formatter
+fmt=PartialStrFormat()
 
 # ---------- CONTROLLER CONFIG/INFO INTERACTION ----------
 
@@ -325,6 +360,18 @@ def remove_ctrl_options():
         subprocess.check_output(cmd.split(" "))
 
 class ControllerManager:
+    """ Controller manager that starts a multi-controler SDN system based on
+    a switch to controller maping file and allows interation with instances.
+
+    Configuration file start command placeholders:
+        {log_level} - numeric log level to use
+        {conf_file} - path to emulator base generated config file
+        {log_file} - Path to log file
+        {cip} - IP address assigned to controller
+        {dom_id} - Domain/Area ID of the controller
+        {inst_id} - ID of the instance
+    """
+
     """ Dictionary of started controllers and information with format:
     {<dom_id>: {"proc": <proc>, "cmd": <cmd>, "extra_instances": {
         <inst_id>: {"proc": <iproc>, "cmd": <icmd>}, ...
@@ -342,28 +389,21 @@ class ControllerManager:
     """
     __controllers = {}
 
-    # Local controller start command
-    __local_ctrl_start = """ryu-manager ProactiveControllerAlt.py \
---default-log-level {log_level} --config-file {conf_file} --log-file {log_file}"""
-
-    # Root controller start command
-    __root_ctrl_start = """python RootCtrl.py --loglevel {log_level} \
---log-file {log_file}"""
+    # Local controller start command (LOADED FROM CONFIG FILE)
+    __local_ctrl_start = ""
+    # Root controller start command (LOADED FROM CONFIG FILE)
+    __root_ctrl_start = ""
 
     # Dictionary of local config attributes. Add key value pairs to each block
     # to write to the local controller instance configuration file. Note, the
     # top level dictionary key is in format (<order>, <name>) were the <order>
-    # is used to enforce how the config blocks are added to the file.
-    __local_ctrl_config_attr = {
-        (1, "DEFAULT"): {},
-        (2, "application"): {},
-        (3, "stats"): {},
-        (4, "te"): {},
-        (5, "multi_ctrl"): {},
-    }
+    # is used to enforce how the config blocks are added to the file. Blocks
+    # are loaded from the config file
+    __local_ctrl_config_attr = {}
 
     def __init__(self, ports_data=None, map=None, ctrl_channel_opts=None,
-                    log_level="critical"):
+                    log_level="critical",
+                    config_file=None):
         """ Initiate a new controller manager. If provided, load the ports
         file and switch-to-controller map (used to start multiple controllers).
         If a `map` was not provided, the manager will assume it's running in
@@ -380,9 +420,24 @@ class ControllerManager:
                 Defaults to "critical" (level 30). String level will be
                 converted to integers. If the level is invalid, the default
                 level is used (critical).
+            config_file (str): Path to controller configuration file that
+                specifies the start command of the controllers.
         """
         self.controllers = {}
         self.ctrl_channel_opts = ctrl_channel_opts
+
+        # Load the controller config file
+        with open(config_file, "r") as fin:
+            config_info = yaml.safe_load(fin)
+        self.__local_ctrl_start = config_info["start_cmd"]["local"]
+        self.__root_ctrl_start = config_info["start_cmd"]["root"]
+
+        for block in config_info["local_config"]["blocks"]:
+            self.__local_ctrl_config_attr[(block[0], block[1])] = {}
+        if "extra" in config_info["local_config"]:
+            for blk,blk_d in config_info["local_config"]["extra"].iteritems():
+                for attr,val in blk_d.iteritems():
+                    self.set_ctrl_config(blk, attr, val)
 
         # Set the log level
         self.log_level = 50
@@ -786,9 +841,13 @@ class ControllerManager:
             add_ctrl_options(self.ctrl_channel_opts, ctrl_info["cip"]+"/32")
 
         # Start the local controller instance and save it's details
-        cmd = self.__local_ctrl_start.format(conf_file=ctrl_info["conf_file"],
-                        log_level=self.log_level,
-                        log_file="/tmp/%s.%s.log" % (ctrl, 0))
+        cmd = fmt.format(self.__local_ctrl_start,
+                                    conf_file=ctrl_info["conf_file"],
+                                    log_level=self.log_level,
+                                    log_file="/tmp/%s.%s.log" % (ctrl, 0),
+                                    cip=ctrl_info["cip"],
+                                    dom_id=ctrl_info["dom_id"],
+                                    inst_id=0)
         cmd = cmd.split(" ")
 
         self.controllers[ctrl] = {
@@ -803,9 +862,13 @@ class ControllerManager:
             if self.ctrl_channel_opts is not None:
                 add_ctrl_options(self.ctrl_channel_opts, inst_d["cip"]+"/32")
 
-            cmd = self.__local_ctrl_start.format(conf_file=inst_d["conf_file"],
-                            log_level=self.log_level,
-                            log_file="/tmp/%s.%s.log" % (ctrl, inst))
+            cmd = fmt.format(self.__local_ctrl_start,
+                                    conf_file=inst_d["conf_file"],
+                                    log_level=self.log_level,
+                                    log_file="/tmp/%s.%s.log" % (ctrl, inst),
+                                    cip=inst_d["cip"],
+                                    dom_id=ctrl_info["dom_id"],
+                                    inst_id=inst)
             cmd = cmd.split(" ")
 
             target = self.controllers[ctrl]["extra_instances"]
@@ -818,8 +881,9 @@ class ControllerManager:
         interaction. By default, root is considered to have the controller name
         'root'.
         """
-        cmd = self.__root_ctrl_start.format(log_level=self.log_level,
-                                            log_file="/tmp/root.0.log")
+        cmd = fmt.format(self.__root_ctrl_start,
+                                log_level=self.log_level,
+                                log_file="/tmp/root.0.log")
         cmd = cmd.split(" ")
         self.controllers["root"] = {
             "proc": None,

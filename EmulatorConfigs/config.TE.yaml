@@ -1,0 +1,16 @@
+start_cmd:
+    local: "ryu-manager ProactiveControllerAlt.py --default-log-level {log_level} --config-file {conf_file} --log-file {log_file}"
+    root: "python RootCtrl.py --loglevel {log_level} --log-file {log_file}"
+local_config:
+    blocks:
+        - [1, "DEFAULT"]
+        - [2, "application"]
+        - [3, "stats"]
+        - [4 , "te"]
+        - [5, "multi_ctrl"]
+    extra:
+        application:
+            optimise_protection: False
+        stats:
+            collect: True
+            collect_port: True

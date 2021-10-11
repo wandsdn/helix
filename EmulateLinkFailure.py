@@ -5,7 +5,8 @@ link failure test on a topology with a specific controller.
 
 Usage:
     sudo ./Emulate.py --topo <topology> --controller <ctrl_name> --failure \
-        <fail> --sw_ctrl_map [map] --ctrl_options [ctrl_opts]
+        <fail> --sw_ctrl_map [map] --ctrl_options [ctrl_opts] \
+        --config_file [config_file]
 
     <topology> - Topology module to use for the emulation
     <ctrl_name> - Name of the controller to use. See 'controllers.yaml' for
@@ -19,6 +20,9 @@ Usage:
         error, critical). Defaults to critical.
     [ctrl_log_level] - Optional controller logging level (debug, info, warning,
         error, critical). Defaults to critical.
+    [config_file] - Optional configuration file to use for emulator. Specifies
+        start command and other config attributes. Defaults to
+        "EmulatorConfigs/config.LinkFail.yaml".
 """
 
 import os
@@ -387,6 +391,9 @@ if __name__ == "__main__":
         help="Emulator log level (debug, info, warning, error, critical)")
     parser.add_argument("--ctrl_log_level", type=str, default="critical",
         help="Controller log level (debug, info, warning, error, critical)")
+    parser.add_argument("--config_file", type=str,
+        default="EmulatorConfigs/config.LinkFail.yaml",
+        help="Framework config file (specify start cmd and config attr)")
     args = parser.parse_args()
 
     # Load the topology module, failure scenario and validate attributes/run
@@ -420,9 +427,8 @@ if __name__ == "__main__":
         # Initiate controller manager, start emulation and run experiment
         controllers = ControllerManager(map=sw_ctrl_map,
                         ctrl_channel_opts=ctrl_channel_options,
-                        log_level=args.ctrl_log_level)
-        controllers.set_ctrl_config("application", "optimise_protection", False)
-        controllers.set_ctrl_config("stats", "collect", False)
+                        log_level=args.ctrl_log_level,
+                        config_file=args.config_file)
         controllers.set_ctrl_cmd_module(get_ctrl_module(CONTROLLERS,
                                             controller_name))
         net = controllers.start(topo)
