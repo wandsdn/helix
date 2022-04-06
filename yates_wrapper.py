@@ -22,7 +22,7 @@ LOOSE_SPLICE = False
 
 class Action(Enum):
     """ Enumaration class used to restrict and select the supported actions of
-    the interface.
+    the wrapper.
     """
     topo = 'topo'
     te = 'te'
@@ -44,6 +44,11 @@ class CustomArgParser (ArgumentParser):
         exit(2)
 
 
+class DummyCtrlCom:
+    def __init__(self):
+        self.inter_dom_paths = {}
+
+
 class TE_Wrapper():
     """ Class that defines a wrapper for the TE optimisation class. This class is used
     to work out modifications to resolve congestion.
@@ -59,6 +64,7 @@ class TE_Wrapper():
                                                 te_thresh, logger, path_file=TEMP_PATH_FILE):
         self.modified = False
         self.logger = logger
+        self.ctrl_com = DummyCtrlCom()
 
         # Unserialize the paths from the JSON file and load to the paths object
         with open(path_file, "r") as f:
@@ -431,7 +437,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=1000)
 
     # Initiate the argument parser
-    parser = CustomArgParser("Yates SDN Controller Interface", logging)
+    parser = CustomArgParser("Yates SDN Controller Wrapper", logging)
     parser.add_argument("--action", required=True, type=Action, choices=list(Action),
         help="topo = Compute paths | te = Check Congestion")
     parser.add_argument("--topo", required=True, type=str, default=None,

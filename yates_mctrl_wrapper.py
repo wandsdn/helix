@@ -50,7 +50,7 @@ CID = ""
 
 class Action(Enum):
     """ Enumaration class used to restrict and select the supported actions of
-    the interface.
+    the wrapper
     """
     topo = 'topo'
     te = 'te'
@@ -658,7 +658,7 @@ def load_inter_dom_links (file_path, topo):
 
 if __name__ == "__main__":
     # Initiate the argument parser and logging module
-    parser = CustomArgParser("Yates SDN Controller Interface", logging)
+    parser = CustomArgParser("Yates SDN Controller Wrapper", logging)
     parser.add_argument("--cid", required=True, type=str, default=None,
         help="CID of the local controller.")
     parser.add_argument("--action", required=True, type=Action, choices=list(Action),

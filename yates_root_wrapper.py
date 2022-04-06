@@ -16,7 +16,7 @@ TEMP_PATH_INST_FILE = "/tmp/inst.root.tmp"
 
 class Action(Enum):
     """ Enumaration class used to restrict and select the supported actions of
-    the interface.
+    the wrapper.
     """
     topo = "topo"
     te = "te"
@@ -40,7 +40,7 @@ class CustomArgParser (ArgumentParser):
 
 
 class DummyRootCtrl(RootCtrl):
-    """ Dummy root controller used by the interface. Disable all communication channel actions """
+    """ Dummy root controller used by the wrapper. Disable all communication channel actions """
 
     def __init__(self, logger=None, te_candidate_sort_rev=True, te_paccept=False):
         # If the logger is not defined init one that suppresses all errors
@@ -414,7 +414,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=1000)
 
     # Initiate the argument parser
-    parser = CustomArgParser("Yates SDN Root Controller Interface", logging)
+    parser = CustomArgParser("Yates SDN Root Controller Wrapper", logging)
     parser.add_argument("--action", required=True, type=Action, choices=list(Action),
         help="topo = Compute paths | te = Check Congestion | ing_egg_change = Ingress / Egress change")
     parser.add_argument("--sw_ctrl_map", required=True, type=str, default=None,
